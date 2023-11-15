@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- *_eputs - prints an input string.
+ *_eputs - prints an input string
  * @str: the string to be printed
  *
  * Return: Nothing
@@ -83,4 +83,3 @@ int _putsfd(char *str, int fd)
 	}
 	return (i);
 }
-
