@@ -1,17 +1,29 @@
 #include "shell.h"
 
 /**
+<<<<<<< HEAD
  * _exitf - exits the shell.
+=======
+ * _myexit - exits the shell.
+>>>>>>> fbcab34875bdaf3551c7b22d99c9863960c2be68
  * @info: Structure containing potential arguments. Used to maintain
  *          constant function prototype.
  *  Return: exits with a given exit status
  *         (0) if info.argv[0] != "exit"
  */
+<<<<<<< HEAD
 int _exitf(info_t *info)
 {
 	int exitcheck;
 
 	if (info->argv[1]) /* If there is an exit arguement */
+=======
+int _myexit(info_t *info)
+{
+	int exitcheck;
+
+	if (info->argv[1])  /* If there is an exit arguement */
+>>>>>>> fbcab34875bdaf3551c7b22d99c9863960c2be68
 	{
 		exitcheck = _erratoi(info->argv[1]);
 		if (exitcheck == -1)
@@ -30,12 +42,20 @@ int _exitf(info_t *info)
 }
 
 /**
+<<<<<<< HEAD
  * _cdf - changes the current directory of the process
+=======
+ * _mycd - changes the current directory of the process
+>>>>>>> fbcab34875bdaf3551c7b22d99c9863960c2be68
  * @info: Structure containing potential arguments. Used to maintain
  *          constant function prototype.
  *  Return: Always 0
  */
+<<<<<<< HEAD
 int _cdf(info_t *info)
+=======
+int _mycd(info_t *info)
+>>>>>>> fbcab34875bdaf3551c7b22d99c9863960c2be68
 {
 	char *s, *dir, buffer[1024];
 	int chdir_ret;
@@ -80,12 +100,20 @@ int _cdf(info_t *info)
 }
 
 /**
+<<<<<<< HEAD
  * _helpf - changes the current directory of the process
+=======
+ * _myhelp - changes the current directory of the process
+>>>>>>> fbcab34875bdaf3551c7b22d99c9863960c2be68
  * @info: Structure containing potential arguments. Used to maintain
  *          constant function prototype.
  *  Return: Always 0
  */
+<<<<<<< HEAD
 int _helpf(info_t *info)
+=======
+int _myhelp(info_t *info)
+>>>>>>> fbcab34875bdaf3551c7b22d99c9863960c2be68
 {
 	char **arg_array;
 
@@ -95,4 +123,7 @@ int _helpf(info_t *info)
 		_puts(*arg_array); /* temp att_unused workaround */
 	return (0);
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> fbcab34875bdaf3551c7b22d99c9863960c2be68
